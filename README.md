@@ -1,6 +1,4 @@
-Absolutely — here’s the full **README.md** with everything formatted cleanly for GitHub, so it looks polished even with just a single Python script.
 
----
 
 ````markdown
 # 🎙️ Macbert
