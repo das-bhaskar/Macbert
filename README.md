@@ -1,6 +1,3 @@
-
-
-````markdown
 # 🎙️ Macbert
 
 **Macbert** is a minimalist voice-controlled transcription tool for macOS. It records a short voice clip using your microphone, transcribes it using OpenAI’s Whisper model, and (optionally) executes matched shell commands — all locally, no internet required after setup.
@@ -11,11 +8,11 @@
 
 ## ✨ Features
 
-- 🎧 Records voice from your Mac’s microphone
-- 🧠 Transcribes locally using Whisper
-- ⚡ Works offline after install
-- 🚀 Can be compiled into a one-click Mac app using PyInstaller
-- 🔐 Does not send your audio to any server
+- 🎧 Records voice from your Mac’s microphone  
+- 🧠 Transcribes locally using Whisper  
+- ⚡ Works offline after install  
+- 🚀 Can be compiled into a one-click Mac app using PyInstaller  
+- 🔐 Does not send your audio to any server  
 
 ---
 
@@ -26,7 +23,7 @@
 ```bash
 git clone https://github.com/yourusername/macbert.git
 cd macbert
-````
+```
 
 ### 🧪 2. Create and Activate a Virtual Environment (Recommended)
 
@@ -43,7 +40,7 @@ pip install sounddevice
 pip install rapidfuzz
 ```
 
-If you're using Whisper for the first time, it may also download model weights the first time you run it.
+> If you're using Whisper for the first time, it may also download model weights the first time you run it.
 
 ---
 
@@ -57,22 +54,22 @@ python macbert.py
 
 This will:
 
-1. Record 5 seconds of audio via your mic
-2. Save it to `temp.wav`
-3. Transcribe the spoken text using the Whisper model
-4. Attempt to match the phrase to a shell command (e.g., "open Chrome")
-5. Execute the matched command without asking
+1. Record 5 seconds of audio via your mic  
+2. Save it to `temp.wav`  
+3. Transcribe the spoken text using the Whisper model  
+4. Attempt to match the phrase to a shell command (e.g., "open Chrome")  
+5. Execute the matched command without asking  
 
 ---
 
 ## 🧠 Example Commands You Can Say
 
 | Phrase              | What It Does                         |
-| ------------------- | ------------------------------------ |
-| "open chrome"       | Launches Google Chrome               |
-| "open vscode"       | Opens Visual Studio Code             |
-| "open terminal"     | Opens Terminal                       |
-| "shutdown computer" | Shuts down your Mac (⚠️ Be careful!) |
+|---------------------|--------------------------------------|
+| `open chrome`       | Launches Google Chrome               |
+| `open vscode`       | Opens Visual Studio Code             |
+| `open terminal`     | Opens Terminal                       |
+| `shutdown computer` | Shuts down your Mac (⚠️ Be careful!) |
 
 Commands are stored in the `COMMANDS` dictionary inside the script. You can add your own!
 
@@ -105,9 +102,8 @@ Double-click it to run like a native app.
 
 ---
 
-
 ## 🤝 Credits
 
-* [Whisper](https://github.com/openai/whisper) by OpenAI
-* [`sounddevice`](https://pypi.org/project/sounddevice/)
-* [`rapidfuzz`](https://github.com/maxbachmann/RapidFuzz)
+- [Whisper](https://github.com/openai/whisper) by OpenAI  
+- [`sounddevice`](https://pypi.org/project/sounddevice/)  
+- [`rapidfuzz`](https://github.com/maxbachmann/RapidFuzz)
